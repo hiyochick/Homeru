@@ -200,6 +200,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan1Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="bzN-uR-pWZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OWp-JH-DW2">
                                 <rect key="frame" x="149" y="524" width="97" height="51"/>
@@ -210,6 +213,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan2Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="g58-g8-7yZ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uad-WW-V6i">
                                 <rect key="frame" x="254" y="524" width="97" height="51"/>
@@ -220,6 +226,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan3Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="PYY-0i-Yzz"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chr-A2-FKL">
                                 <rect key="frame" x="41" y="583" width="97" height="51"/>
@@ -230,6 +239,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan4Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="zll-I3-8Bl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuw-Lj-dXv">
                                 <rect key="frame" x="149" y="583" width="97" height="51"/>
@@ -240,6 +252,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan5Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="sSh-R6-sGk"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y81-Cb-Wpq">
                                 <rect key="frame" x="254" y="583" width="97" height="51"/>
@@ -250,6 +265,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan6Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="uck-JZ-S6N"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="whn-z1-58W">
                                 <rect key="frame" x="41" y="642" width="97" height="51"/>
@@ -260,6 +278,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan7Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="0Ul-kb-atb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dhl-Kt-GAj">
                                 <rect key="frame" x="149" y="642" width="97" height="51"/>
@@ -270,6 +291,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan8Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="hkr-A2-moq"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pGe-vb-YOx">
                                 <rect key="frame" x="254" y="642" width="97" height="51"/>
@@ -280,6 +304,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan9Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="wwN-LD-S0o"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JHQ-4s-fDl">
                                 <rect key="frame" x="41" y="701" width="97" height="51"/>
@@ -290,6 +317,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan10Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="xop-bY-MZ9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w3K-O2-OxJ">
                                 <rect key="frame" x="149" y="701" width="97" height="51"/>
@@ -300,6 +330,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan11Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="ZoK-cb-l7X"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcA-Zb-vlt">
                                 <rect key="frame" x="254" y="701" width="97" height="51"/>
@@ -310,6 +343,9 @@
                                         <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
                                     </backgroundConfiguration>
                                 </buttonConfiguration>
+                                <connections>
+                                    <action selector="tan12Tapped:" destination="HDG-Eq-1IV" eventType="touchUpInside" id="zRs-TK-T35"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="163-Dw-nEU">
                                 <rect key="frame" x="145" y="349" width="104" height="42"/>
