@@ -32,13 +32,17 @@ class DuolingoViewController: UIViewController {
     @IBOutlet var tan11: UIButton!
     @IBOutlet var tan12: UIButton!
     
+    //time
+    @IBOutlet var timerLabel: UILabel!
+    //timer用変数
+    var timer: Timer?
+    var remaining = 15
 
     var kansai = ["あんた", "好きやねん", "シュッとしてるし", "うまいよなあ", "ほんま", "しらんけど", "なんていうか", "頼りにしてるで", "ええ人すぎ", "さすがに", "いくらなんでも", "やばいって", "エグい", "かいらして", "しゃーない", "ええ加減", "センスええわあ", "そういうとこ", "あの時", "助けてくれたやんか", "ええとこ", "ないやんか", "誰とでも", "仲良いし", "オチも", "うまいし", "なかなか", "いつ見ても", "笑顔", "尊敬するわ", "どうやって", "老若男女 32", "ほんまに", "一緒に", "いたいって", "思うねん", "イケてる", "今日の服", "昨日さ", "助けてくれたやんか", "しんどくても", "おもろい", "いっちゃん", "せやねん", "好きやわ", "いつまでも", "そのままで", "が", "も", "は", "へ", "日本", "大阪", "たこ焼き", "作るん", "誰より", "料理", "行きたい", "あんたとなら", "と60", "昔", "家", "で", "に", "言いたい", "みんな", "1人", "むずすぎ", "やって", "ありえへん", "ねん", "やで", "わあ", "した", "うそやん", "学校", "気使える", "言うてる", "してくれる", "やん", "仕事", "大変やのに", "やし", "努力家", "気取らん", "感じ", "真似したい", "どうやったら", "うちの", "通天閣60", "しよや", "登ろ", "まだまだ", "いける", "見えへん", "ええて", "意味わからんくらい", "かっこええ", "上手に", "やんか", "なんなん", "まじで", "ほんま", "イケてる", "メイク", "親御さん", "優しい", "親孝行", "仲良し", "頼れる", "小さい", "時間通り", "来るし", "いくらなんでも", "言うたって", "おかしい", "任せて", "任せた", "いっちゃん", "ケチくさい90", "自分", "なんか考えられへん", "キッツい", "勉強", "も", "やて", "めっちゃ", "細かい", "話しやすい", "大きい100", 
     ]
     
     var random = [String]()
     var selected = [String]()
-
 
     func RandomNum(count: Int, min: Int, max: Int) -> [Int] {
         var uniqueNum = Set<Int>()
@@ -49,10 +53,15 @@ class DuolingoViewController: UIViewController {
         }
         return Array(uniqueNum)
     }
+    
+
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //初期ラベルの設定
+        updateTimerLabel()
+        
         //元の100個の単語の順番をシャッフルする
         kansai.shuffle()
         
@@ -89,6 +98,53 @@ class DuolingoViewController: UIViewController {
         update_label()
 
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        startTimer()
+    }
+    // タイマーを開始するメソッド
+    func startTimer() {
+        // 既にタイマーが動作している場合は無効にする
+        timer?.invalidate()
+        
+        // タイマーを設定して開始
+        timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(updateTimer), userInfo: nil, repeats: true)
+    }
+        
+        // 1秒ごとに呼び出されるメソッド
+    @objc func updateTimer() {
+        if remaining > 0 {
+            remaining -= 1
+            updateTimerLabel()
+        } else {
+            // タイマーを無効にする
+            timer?.invalidate()
+            timer = nil
+        }
+    }
+    
+    // timerラベルを更新するメソッド
+    func updateTimerLabel() {
+        let minutes = remaining / 60
+        let seconds = remaining % 60
+        timerLabel.text = String(format: "%02d:%02d", minutes, seconds)
+    }
+    
+    class ViewController: UIViewController {
+        var counter = 10
+        var timer = Timer()
+        
+        
+        @objc func updateTimer() {
+            if counter > 0 {
+                counter -= 1
+            } else {
+                timer.invalidate()
+            }
+        }
+    }
+    
     
     @IBAction func reset () {
     
