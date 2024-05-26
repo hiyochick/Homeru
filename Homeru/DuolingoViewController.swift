@@ -114,13 +114,17 @@ class DuolingoViewController: UIViewController {
         
         // 1秒ごとに呼び出されるメソッド
     @objc func updateTimer() {
-        if remaining > 0 {
+        if remaining >= 1 {
             remaining -= 1
             updateTimerLabel()
-        } else {
+        }else if remaining < 1{
+            timerLabel.textColor = UIColor.red
             // タイマーを無効にする
             timer?.invalidate()
             timer = nil
+            updateTimerLabel()
+            //self.performSegue(withIdentifier: "next", sender: nil)
+            navigateToNextScreen()
         }
     }
     
@@ -144,6 +148,16 @@ class DuolingoViewController: UIViewController {
             }
         }
     }
+    
+    // 次の画面に遷移するメソッド
+    func navigateToNextScreen() {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController")
+        nextViewController.modalTransitionStyle = .crossDissolve
+        nextViewController.modalPresentationStyle = .fullScreen
+        present(nextViewController, animated: true, completion: nil)
+    }
+
     
     
     @IBAction func reset () {
