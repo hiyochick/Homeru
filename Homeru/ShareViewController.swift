@@ -29,13 +29,19 @@ class ShareViewController: UIViewController {
         //        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
         //        self.view.addGestureRecognizer(recognizer)
         
-        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
-        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
-        self.view.addGestureRecognizer(recognizer)
+//        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
+//        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
+//        self.view.addGestureRecognizer(recognizer)
         
-        
+//        navigationController?.interactivePopGestureRecognizer?.delegate = nil
+        // スクリーンエッジパンジェスチャーレコグナイザーの作成
+                let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleEdgePan(_:)))
+                edgePanGesture.edges = .left // 左端からのスワイプを検出
+                view.addGestureRecognizer(edgePanGesture)
+
         
     }
+ 
     
     
     override func viewDidAppear(_ animated: Bool) {
@@ -64,6 +70,13 @@ class ShareViewController: UIViewController {
             let activityViewController = UIActivityViewController(activityItems: [screenshot], applicationActivities: nil)
             activityViewController.popoverPresentationController?.sourceView = self.view
             self.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+    
+    @objc func handleEdgePan(_ gesture: UIScreenEdgePanGestureRecognizer) {
+        if gesture.state == .recognized {
+            // 画面を閉じて前の画面に戻る
+            self.dismiss(animated: true, completion: nil)
         }
     }
  

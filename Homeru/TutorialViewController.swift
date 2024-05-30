@@ -22,9 +22,12 @@ class TutorialViewController: UIPageViewController {
         let sixthpage = storyboard!.instantiateViewController(withIdentifier: "SixthViewController") as! SixthViewController
         
         pageViewControllers = [secondpage, thirdpage, fourthpage, fifthpage, sixthpage]
-        
+        dataSource = self
         //最初に表示するページの指定
         self.setViewControllers([pageViewControllers[0]], direction: .forward, animated: true, completion: nil)
+        
+        UIPageControl.appearance().backgroundColor = .clear
+
         
     }
         
@@ -57,6 +60,14 @@ extension TutorialViewController: UIPageViewControllerDataSource, UIPageViewCont
         } else {
             return pageViewControllers[index + 1]
         }
+    }
+    
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
+        pageViewControllers.count
+    }
+    
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+        0
     }
 }
 
