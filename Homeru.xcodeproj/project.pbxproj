@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		63133E102C08497300BF929A /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63133E0D2C08497200BF929A /* KiwiMaru-Medium.ttf */; };
+		63133E112C08497300BF929A /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63133E0E2C08497300BF929A /* KiwiMaru-Light.ttf */; };
+		63133E122C08497300BF929A /* KiwiMaru-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63133E0F2C08497300BF929A /* KiwiMaru-Regular.ttf */; };
+		63133E142C08523D00BF929A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63133E132C08523C00BF929A /* ShareViewController.swift */; };
+		63234C782C02F7AB009507C0 /* HometaroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C772C02F7AB009507C0 /* HometaroViewController.swift */; };
+		63234C7C2C06DF53009507C0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C7B2C06DF53009507C0 /* ThirdViewController.swift */; };
+		63234C7E2C071DB1009507C0 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C7D2C071DB1009507C0 /* TutorialViewController.swift */; };
+		63234C802C0720EB009507C0 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C7F2C0720EB009507C0 /* SecondViewController.swift */; };
+		63234C822C0720FA009507C0 /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C812C0720FA009507C0 /* FourthViewController.swift */; };
+		63234C842C07210A009507C0 /* FifthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C832C07210A009507C0 /* FifthViewController.swift */; };
+		63234C862C0721CD009507C0 /* SixthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C852C0721CD009507C0 /* SixthViewController.swift */; };
 		632E50B02BFC6F1F00BAA929 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E50AF2BFC6F1F00BAA929 /* AppDelegate.swift */; };
 		632E50B22BFC6F1F00BAA929 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E50B12BFC6F1F00BAA929 /* SceneDelegate.swift */; };
 		632E50B42BFC6F1F00BAA929 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E50B32BFC6F1F00BAA929 /* ViewController.swift */; };
@@ -17,6 +28,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		63133E0D2C08497200BF929A /* KiwiMaru-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Medium.ttf"; sourceTree = "<group>"; };
+		63133E0E2C08497300BF929A /* KiwiMaru-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Light.ttf"; sourceTree = "<group>"; };
+		63133E0F2C08497300BF929A /* KiwiMaru-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Regular.ttf"; sourceTree = "<group>"; };
+		63133E132C08523C00BF929A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		63234C772C02F7AB009507C0 /* HometaroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometaroViewController.swift; sourceTree = "<group>"; };
+		63234C7B2C06DF53009507C0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		63234C7D2C071DB1009507C0 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
+		63234C7F2C0720EB009507C0 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		63234C812C0720FA009507C0 /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
+		63234C832C07210A009507C0 /* FifthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FifthViewController.swift; sourceTree = "<group>"; };
+		63234C852C0721CD009507C0 /* SixthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SixthViewController.swift; sourceTree = "<group>"; };
 		632E50AC2BFC6F1F00BAA929 /* Homeru.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Homeru.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		632E50AF2BFC6F1F00BAA929 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		632E50B12BFC6F1F00BAA929 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +61,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		63133E092C07703900BF929A /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				63133E0E2C08497300BF929A /* KiwiMaru-Light.ttf */,
+				63133E0D2C08497200BF929A /* KiwiMaru-Medium.ttf */,
+				63133E0F2C08497300BF929A /* KiwiMaru-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		632E50A32BFC6F1F00BAA929 = {
 			isa = PBXGroup;
 			children = (
@@ -58,6 +90,7 @@
 		632E50AE2BFC6F1F00BAA929 /* Homeru */ = {
 			isa = PBXGroup;
 			children = (
+				63133E092C07703900BF929A /* fonts */,
 				632E50AF2BFC6F1F00BAA929 /* AppDelegate.swift */,
 				632E50B12BFC6F1F00BAA929 /* SceneDelegate.swift */,
 				632E50B32BFC6F1F00BAA929 /* ViewController.swift */,
@@ -66,6 +99,14 @@
 				632E50BA2BFC6F2100BAA929 /* LaunchScreen.storyboard */,
 				632E50BD2BFC6F2100BAA929 /* Info.plist */,
 				632E50C32BFE007F00BAA929 /* DuolingoViewController.swift */,
+				63234C772C02F7AB009507C0 /* HometaroViewController.swift */,
+				63234C7D2C071DB1009507C0 /* TutorialViewController.swift */,
+				63234C7F2C0720EB009507C0 /* SecondViewController.swift */,
+				63234C7B2C06DF53009507C0 /* ThirdViewController.swift */,
+				63234C812C0720FA009507C0 /* FourthViewController.swift */,
+				63234C832C07210A009507C0 /* FifthViewController.swift */,
+				63234C852C0721CD009507C0 /* SixthViewController.swift */,
+				63133E132C08523C00BF929A /* ShareViewController.swift */,
 			);
 			path = Homeru;
 			sourceTree = "<group>";
@@ -130,7 +171,10 @@
 			files = (
 				632E50B92BFC6F2100BAA929 /* Assets.xcassets in Resources */,
 				632E50BC2BFC6F2100BAA929 /* Base in Resources */,
+				63133E102C08497300BF929A /* KiwiMaru-Medium.ttf in Resources */,
 				632E50B72BFC6F1F00BAA929 /* Base in Resources */,
+				63133E122C08497300BF929A /* KiwiMaru-Regular.ttf in Resources */,
+				63133E112C08497300BF929A /* KiwiMaru-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +185,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63234C842C07210A009507C0 /* FifthViewController.swift in Sources */,
+				63234C802C0720EB009507C0 /* SecondViewController.swift in Sources */,
+				63234C782C02F7AB009507C0 /* HometaroViewController.swift in Sources */,
+				63234C7E2C071DB1009507C0 /* TutorialViewController.swift in Sources */,
+				63234C862C0721CD009507C0 /* SixthViewController.swift in Sources */,
+				63234C822C0720FA009507C0 /* FourthViewController.swift in Sources */,
+				63133E142C08523D00BF929A /* ShareViewController.swift in Sources */,
 				632E50B42BFC6F1F00BAA929 /* ViewController.swift in Sources */,
 				632E50B02BFC6F1F00BAA929 /* AppDelegate.swift in Sources */,
+				63234C7C2C06DF53009507C0 /* ThirdViewController.swift in Sources */,
 				632E50B22BFC6F1F00BAA929 /* SceneDelegate.swift in Sources */,
 				632E50C42BFE008000BAA929 /* DuolingoViewController.swift in Sources */,
 			);

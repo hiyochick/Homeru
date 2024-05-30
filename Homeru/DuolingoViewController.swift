@@ -38,7 +38,7 @@ class DuolingoViewController: UIViewController {
     var timer: Timer?
     var remaining = 15
 
-    var kansai = ["あんた", "好きやねん", "シュッとしてるし", "うまいよなあ", "ほんま", "しらんけど", "なんていうか", "頼りにしてるで", "ええ人すぎ", "さすがに", "いくらなんでも", "やばいって", "エグい", "かいらして", "しゃーない", "ええ加減", "センスええわあ", "そういうとこ", "あの時", "助けてくれたやんか", "ええとこ", "ないやんか", "誰とでも", "仲良いし", "オチも", "うまいし", "なかなか", "いつ見ても", "笑顔", "尊敬するわ", "どうやって", "老若男女 32", "ほんまに", "一緒に", "いたいって", "思うねん", "イケてる", "今日の服", "昨日さ", "助けてくれたやんか", "しんどくても", "おもろい", "いっちゃん", "せやねん", "好きやわ", "いつまでも", "そのままで", "が", "も", "は", "へ", "日本", "大阪", "たこ焼き", "作るん", "誰より", "料理", "行きたい", "あんたとなら", "と60", "昔", "家", "で", "に", "言いたい", "みんな", "1人", "むずすぎ", "やって", "ありえへん", "ねん", "やで", "わあ", "した", "うそやん", "学校", "気使える", "言うてる", "してくれる", "やん", "仕事", "大変やのに", "やし", "努力家", "気取らん", "感じ", "真似したい", "どうやったら", "うちの", "通天閣60", "しよや", "登ろ", "まだまだ", "いける", "見えへん", "ええて", "意味わからんくらい", "かっこええ", "上手に", "やんか", "なんなん", "まじで", "ほんま", "イケてる", "メイク", "親御さん", "優しい", "親孝行", "仲良し", "頼れる", "小さい", "時間通り", "来るし", "いくらなんでも", "言うたって", "おかしい", "任せて", "任せた", "いっちゃん", "ケチくさい90", "自分", "なんか考えられへん", "キッツい", "勉強", "も", "やて", "めっちゃ", "細かい", "話しやすい", "大きい100", 
+    var kansai = ["あんた", "好きやねん", "シュッとしてるし", "うまいよなあ", "ほんま", "しらんけど", "なんていうか", "頼りにしてるで", "ええ人すぎ", "さすがに", "いくらなんでも", "やばいって", "エグい", "かいらして", "しゃーない", "ええ加減", "センスええわあ", "そういうとこ", "あの時", "助けてくれたやんか", "ええとこ", "ないやんか", "誰とでも", "仲良いし", "オチも", "うまいし", "なかなか", "いつ見ても", "笑顔", "尊敬するわ", "どうやって", "老若男女", "ほんまに", "一緒に", "いたいって", "思うねん", "イケてる", "今日の服", "昨日さ", "助けてくれたやんか", "しんどくても", "おもろい", "いっちゃん", "せやねん", "好きやわ", "いつまでも", "そのままで", "なんぼ", "も", "かいらして", "へ", "日本で", "大阪で", "たこ焼き", "作るん", "誰より", "料理", "行きたい", "あんたとなら", "と", "昔さ", "家", "で", "に", "言いたい", "みんな", "ええやんか", "むずすぎ", "やって", "ありえへん", "ねん", "やで", "わあ", "やっぱ", "うそやん", "学校", "気使える", "言うてる", "してくれる", "やん", "仕事でも", "大変やのに", "やし", "努力家", "気取らん", "感じ", "真似したい", "どうやったら", "うちの", "通天閣", "しよや", "登ろ", "まだまだ", "いける", "見えへん", "ええて", "意味わからんくらい", "かっこええ", "上手に", "やんか", "なんなん", "まじで", "ほんま", "イケてる", "メイク", "親御さん", "優しい", "親孝行", "仲良し", "頼れる", "小さい", "時間通り", "来るし", "いくらなんでも", "言うたって", "おかしい", "任せて", "任せた", "いっちゃん", "ケチくさい", "自分", "なんか考えられへん", "キッツい", "勉強", "泣くて", "やて", "めっちゃ", "細かい", "話しやすい", "大きい", 
     ]
     
     var random = [String]()
@@ -55,10 +55,37 @@ class DuolingoViewController: UIViewController {
     }
     
 
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //選択できる単語 枠線設定
+        tan1.layer.borderWidth = 1.0
+        tan1.layer.borderColor = UIColor.brown.cgColor
+        tan2.layer.borderWidth = 1.0
+        tan2.layer.borderColor = UIColor.brown.cgColor
+        tan3.layer.borderWidth = 1.0
+        tan3.layer.borderColor = UIColor.brown.cgColor
+        tan4.layer.borderWidth = 1.0
+        tan4.layer.borderColor = UIColor.brown.cgColor
+        tan5.layer.borderWidth = 1.0
+        tan5.layer.borderColor = UIColor.brown.cgColor
+        tan6.layer.borderWidth = 1.0
+        tan6.layer.borderColor = UIColor.brown.cgColor
+        tan7.layer.borderWidth = 1.0
+        tan7.layer.borderColor = UIColor.brown.cgColor
+        tan8.layer.borderWidth = 1.0
+        tan8.layer.borderColor = UIColor.brown.cgColor
+        tan9.layer.borderWidth = 1.0
+        tan9.layer.borderColor = UIColor.brown.cgColor
+        tan10.layer.borderWidth = 1.0
+        tan10.layer.borderColor = UIColor.brown.cgColor
+        tan11.layer.borderWidth = 1.0
+        tan11.layer.borderColor = UIColor.brown.cgColor
+        tan12.layer.borderWidth = 1.0
+        tan12.layer.borderColor = UIColor.brown.cgColor
+
+
+
         //初期ラベルの設定
         updateTimerLabel()
         
@@ -114,17 +141,20 @@ class DuolingoViewController: UIViewController {
         
         // 1秒ごとに呼び出されるメソッド
     @objc func updateTimer() {
-        if remaining >= 1 {
+        if remaining > 0{
             remaining -= 1
             updateTimerLabel()
-        }else if remaining < 1{
+            if remaining <= 0 {
+                timerLabel.textColor = .red
+            }
+        }else {
             timerLabel.textColor = UIColor.red
             // タイマーを無効にする
             timer?.invalidate()
             timer = nil
             updateTimerLabel()
             //self.performSegue(withIdentifier: "next", sender: nil)
-            navigateToNextScreen()
+            navigateToNextScreen()  //タイマーが終了したら次の画面へ
         }
     }
     
@@ -139,7 +169,6 @@ class DuolingoViewController: UIViewController {
         var counter = 10
         var timer = Timer()
         
-        
         @objc func updateTimer() {
             if counter > 0 {
                 counter -= 1
@@ -152,16 +181,17 @@ class DuolingoViewController: UIViewController {
     // 次の画面に遷移するメソッド
     func navigateToNextScreen() {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController")
-        nextViewController.modalTransitionStyle = .crossDissolve
-        nextViewController.modalPresentationStyle = .fullScreen
-        present(nextViewController, animated: true, completion: nil)
+        if let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController") as? HometaroViewController {
+            nextViewController.receivedData = selected // データを渡す
+            //        let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController")
+            nextViewController.modalTransitionStyle = .crossDissolve
+            nextViewController.modalPresentationStyle = .fullScreen
+            present(nextViewController, animated: true, completion: nil)
+        }
     }
 
     
-    
     @IBAction func reset () {
-    
         selected.removeAll()
         update_label()
         //selected.removeAtIndex(0) やと1つずつ
@@ -174,14 +204,8 @@ class DuolingoViewController: UIViewController {
         tango4.text = selected.count > 3 ? selected[3] : ""
         tango5.text = selected.count > 4 ? selected[4] : ""
         tango6.text = selected.count > 5 ? selected[5] : ""
-
     }
-//
-//    func select() {
-//        selected.append("")
-//        
-//    }
-    
+
     //選択したボタンのTitleを配列selectedに格納
     @IBAction func tan1Tapped(_ sender: UIButton) {
         //let title = sender.title(for: .normal)

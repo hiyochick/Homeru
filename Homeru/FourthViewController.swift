@@ -8,22 +8,18 @@
 import UIKit
 
 class FourthViewController: UIViewController {
-
+    
+    @IBOutlet var waku1: UILabel!
+    @IBOutlet var waku2: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        waku1.layer.borderWidth = 1.0
+        waku1.layer.borderColor = UIColor.brown.cgColor
+        waku2.layer.borderWidth = 1.0
+        waku2.layer.borderColor = UIColor.brown.cgColor
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+  
 }

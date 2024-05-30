@@ -9,21 +9,64 @@ import UIKit
 
 class ShareViewController: UIViewController {
 
+    var shareData: [String] = []
+    
+    @IBOutlet var hometaro: UILabel!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
+        // デバッグのためのログ出力
+        print("shareData: \(shareData)")
+        
+        let combined = shareData.joined(separator: " ")
+        hometaro.text = combined
+        
+        // スワイプジェスチャーの設定
+        //1
+        //        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
+        //        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
+        //        self.view.addGestureRecognizer(recognizer)
+        
+        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
+        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
+        self.view.addGestureRecognizer(recognizer)
+        
+        
+        
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        // 画面が表示された後にスクリーンショットを撮影してシェア
+        shareScreenshot()
     }
-    */
+    // スクリーンショットを撮る関数
+    func takeScreenshot() -> UIImage? {
+        let scenes = UIApplication.shared.connectedScenes
+        let windowScene = scenes.first as? UIWindowScene
+        let window = windowScene?.windows.first
+       // let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+        let renderer = UIGraphicsImageRenderer(bounds: window!.bounds)
+        return renderer.image { rendererContext in
+            window!.layer.render(in: rendererContext.cgContext)
+        }
+    }
 
+    // スクリーンショットをシェアする関数
+    func shareScreenshot() {
+        // スクリーンショットを撮影
+        if let screenshot = takeScreenshot() {
+            // UIActivityViewControllerを使用して共有
+            
+            let activityViewController = UIActivityViewController(activityItems: [screenshot], applicationActivities: nil)
+            activityViewController.popoverPresentationController?.sourceView = self.view
+            self.present(activityViewController, animated: true, completion: nil)
+        }
+    }
+ 
+
+   
 }
