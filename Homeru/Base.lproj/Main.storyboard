@@ -61,7 +61,7 @@
                                     <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="llV-BB-Uuo" kind="presentation" modalPresentationStyle="fullScreen" id="ldR-wi-M5s"/>
+                                    <segue destination="WH0-7F-3Wv" kind="presentation" modalPresentationStyle="fullScreen" id="Ily-qq-xnI"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OW-DR-cQk">
@@ -83,6 +83,7 @@
                         <viewLayoutGuide key="safeArea" id="5x0-5O-Y6k"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SyM-74-rtl"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kSf-zm-6w5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -471,7 +472,7 @@
                                     <fontDescription key="titleFontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="HDG-Eq-1IV" kind="presentation" modalPresentationStyle="fullScreen" id="TqP-Ln-mVR"/>
+                                    <segue destination="HDG-Eq-1IV" kind="show" id="TqP-Ln-mVR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -722,6 +723,7 @@
                         <outlet property="tango5" destination="qk4-am-Ojc" id="W4b-lr-Nu7"/>
                         <outlet property="tango6" destination="aS1-xQ-CFL" id="Y1h-jo-EG7"/>
                         <outlet property="timerLabel" destination="9ud-Mk-bke" id="ZOi-Yv-ubT"/>
+                        <segue destination="Fqd-D9-o3M" kind="show" id="m3L-k1-DGR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Dt-M0-v10" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -796,8 +798,7 @@
                                     <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <action selector="moippen:" destination="Fqd-D9-o3M" eventType="touchUpInside" id="QBS-qA-nTJ"/>
-                                    <segue destination="llV-BB-Uuo" kind="push" id="BYb-tk-eiS"/>
+                                    <action selector="moippen:" destination="Fqd-D9-o3M" eventType="touchUpInside" id="qzN-GR-d10"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4z-RW-Qql">
@@ -809,7 +810,7 @@
                                     <fontDescription key="titleFontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="20"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="2FV-g0-hQA" kind="presentation" identifier="toNext" modalPresentationStyle="fullScreen" id="Nxa-ZZ-SZo"/>
+                                    <segue destination="2FV-g0-hQA" kind="show" identifier="toNext" id="Nxa-ZZ-SZo"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -868,7 +869,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </objects>
-            <point key="canvasLocation" x="4388.5496183206105" y="572.53521126760563"/>
+            <point key="canvasLocation" x="3473" y="573"/>
         </scene>
         <!--Share View Controller-->
         <scene sceneID="DSb-ci-VBK">
@@ -889,36 +890,34 @@
                         <viewLayoutGuide key="safeArea" id="zn4-FC-FsR"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="7ve-3M-e64"/>
                     <connections>
                         <outlet property="hometaro" destination="mOY-RI-fgZ" id="HYz-sa-73V"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xXA-5q-MKh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6327.480916030534" y="572.53521126760563"/>
+            <point key="canvasLocation" x="4364" y="573"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="5Yi-UL-wmD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="WH0-7F-3Wv" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="WH0-7F-3Wv" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="B7z-mU-dz9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="D7Z-Cx-Ye3">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="Fqd-D9-o3M" kind="relationship" relationship="rootViewController" id="VMR-Wi-irR"/>
+                        <segue destination="llV-BB-Uuo" kind="relationship" relationship="rootViewController" id="sZy-qZ-ypR"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="apQ-dM-nuG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3461.8320610687019" y="572.53521126760563"/>
+            <point key="canvasLocation" x="836" y="833"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="BYb-tk-eiS"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

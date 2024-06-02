@@ -7,9 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		63133E102C08497300BF929A /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63133E0D2C08497200BF929A /* KiwiMaru-Medium.ttf */; };
-		63133E112C08497300BF929A /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63133E0E2C08497300BF929A /* KiwiMaru-Light.ttf */; };
-		63133E122C08497300BF929A /* KiwiMaru-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63133E0F2C08497300BF929A /* KiwiMaru-Regular.ttf */; };
 		63133E142C08523D00BF929A /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63133E132C08523C00BF929A /* ShareViewController.swift */; };
 		63234C782C02F7AB009507C0 /* HometaroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C772C02F7AB009507C0 /* HometaroViewController.swift */; };
 		63234C7C2C06DF53009507C0 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63234C7B2C06DF53009507C0 /* ThirdViewController.swift */; };
@@ -25,12 +22,12 @@
 		632E50B92BFC6F2100BAA929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632E50B82BFC6F2100BAA929 /* Assets.xcassets */; };
 		632E50BC2BFC6F2100BAA929 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 632E50BB2BFC6F2100BAA929 /* Base */; };
 		632E50C42BFE008000BAA929 /* DuolingoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E50C32BFE007F00BAA929 /* DuolingoViewController.swift */; };
+		63EEC04C2C0C67060006A507 /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC04A2C0C66DA0006A507 /* KiwiMaru-Light.ttf */; };
+		63EEC04D2C0C67090006A507 /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC0492C0C66DA0006A507 /* KiwiMaru-Medium.ttf */; };
+		63EEC04E2C0C670D0006A507 /* KiwiMaru-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC04B2C0C66DA0006A507 /* KiwiMaru-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		63133E0D2C08497200BF929A /* KiwiMaru-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Medium.ttf"; sourceTree = "<group>"; };
-		63133E0E2C08497300BF929A /* KiwiMaru-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Light.ttf"; sourceTree = "<group>"; };
-		63133E0F2C08497300BF929A /* KiwiMaru-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Regular.ttf"; sourceTree = "<group>"; };
 		63133E132C08523C00BF929A /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
 		63234C772C02F7AB009507C0 /* HometaroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HometaroViewController.swift; sourceTree = "<group>"; };
 		63234C7B2C06DF53009507C0 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
@@ -48,6 +45,9 @@
 		632E50BB2BFC6F2100BAA929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632E50BD2BFC6F2100BAA929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632E50C32BFE007F00BAA929 /* DuolingoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuolingoViewController.swift; sourceTree = "<group>"; };
+		63EEC0492C0C66DA0006A507 /* KiwiMaru-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Medium.ttf"; sourceTree = "<group>"; };
+		63EEC04A2C0C66DA0006A507 /* KiwiMaru-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Light.ttf"; sourceTree = "<group>"; };
+		63EEC04B2C0C66DA0006A507 /* KiwiMaru-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,16 +61,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		63133E092C07703900BF929A /* fonts */ = {
-			isa = PBXGroup;
-			children = (
-				63133E0E2C08497300BF929A /* KiwiMaru-Light.ttf */,
-				63133E0D2C08497200BF929A /* KiwiMaru-Medium.ttf */,
-				63133E0F2C08497300BF929A /* KiwiMaru-Regular.ttf */,
-			);
-			path = fonts;
-			sourceTree = "<group>";
-		};
 		632E50A32BFC6F1F00BAA929 = {
 			isa = PBXGroup;
 			children = (
@@ -90,7 +80,9 @@
 		632E50AE2BFC6F1F00BAA929 /* Homeru */ = {
 			isa = PBXGroup;
 			children = (
-				63133E092C07703900BF929A /* fonts */,
+				63EEC04A2C0C66DA0006A507 /* KiwiMaru-Light.ttf */,
+				63EEC0492C0C66DA0006A507 /* KiwiMaru-Medium.ttf */,
+				63EEC04B2C0C66DA0006A507 /* KiwiMaru-Regular.ttf */,
 				632E50AF2BFC6F1F00BAA929 /* AppDelegate.swift */,
 				632E50B12BFC6F1F00BAA929 /* SceneDelegate.swift */,
 				632E50B32BFC6F1F00BAA929 /* ViewController.swift */,
@@ -169,12 +161,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63EEC04E2C0C670D0006A507 /* KiwiMaru-Regular.ttf in Resources */,
+				63EEC04D2C0C67090006A507 /* KiwiMaru-Medium.ttf in Resources */,
+				63EEC04C2C0C67060006A507 /* KiwiMaru-Light.ttf in Resources */,
 				632E50B92BFC6F2100BAA929 /* Assets.xcassets in Resources */,
 				632E50BC2BFC6F2100BAA929 /* Base in Resources */,
-				63133E102C08497300BF929A /* KiwiMaru-Medium.ttf in Resources */,
 				632E50B72BFC6F1F00BAA929 /* Base in Resources */,
-				63133E122C08497300BF929A /* KiwiMaru-Regular.ttf in Resources */,
-				63133E112C08497300BF929A /* KiwiMaru-Light.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

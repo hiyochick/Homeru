@@ -18,20 +18,13 @@ class HometaroViewController: UIViewController {
     @IBOutlet var home5: UILabel!
     @IBOutlet var home6: UILabel!
             
-//    @IBAction func moippen(_ sender: Any) {
-//        dismiss(animated: true, completion: nil)
-//    }
+    @IBAction func moippen(_ sender: Any) {
+        navigationController?.popToRootViewController(animated: true)
+    }
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Backボタンの変更
-                self.navigationItem.backBarButtonItem = UIBarButtonItem(
-                    title: "",
-                    style: .plain,
-                    target: nil,
-                    action: nil
-                )  
         // 配列の内容をラベルに表示
         
         home1.text = receivedData[safe: 0]

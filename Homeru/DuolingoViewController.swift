@@ -193,10 +193,8 @@ class DuolingoViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         if let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController") as? HometaroViewController {
             nextViewController.receivedData = selected // データを渡す
-            //        let nextViewController = storyboard.instantiateViewController(withIdentifier: "NextViewController")
-            nextViewController.modalTransitionStyle = .crossDissolve
-            nextViewController.modalPresentationStyle = .fullScreen
-            present(nextViewController, animated: true, completion: nil)
+            navigationController?.pushViewController(nextViewController, animated: true)
+           
         }
     }
 
