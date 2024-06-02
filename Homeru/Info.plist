@@ -4,9 +4,9 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>KiwiMaru-Light</string>
-		<string>KiwiMaru-Medium</string>
-		<string>KiwiMaru-Regular</string>
+		<string>KiwiMaru-Light.ttf</string>
+		<string>KiwiMaru-Medium.ttf</string>
+		<string>KiwiMaru-Regular.ttf</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

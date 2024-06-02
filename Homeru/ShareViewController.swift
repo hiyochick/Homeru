@@ -12,6 +12,8 @@ class ShareViewController: UIViewController {
     var shareData: [String] = []
     
     @IBOutlet var hometaro: UILabel!
+    @IBOutlet var screenshotView: UIView!
+    @IBOutlet var returnButton: UIButton!
 
     
     override func viewDidLoad() {
@@ -24,11 +26,11 @@ class ShareViewController: UIViewController {
         hometaro.text = combined
         hometaro.font = UIFont(name: "KiwiMaru-Regular", size: 25)
         
-        // スクリーンエッジパンジェスチャーレコグナイザーの作成
-        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action:
-        #selector(handleEdgePan(_:)))
-        edgePanGesture.edges = .left // 左端からのスワイプを検出
-        view.addGestureRecognizer(edgePanGesture)
+//        // スクリーンエッジパンジェスチャーレコグナイザーの作成
+//        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action:
+//        #selector(handleEdgePan(_:)))
+//        edgePanGesture.edges = .left // 左端からのスワイプを検出
+//        view.addGestureRecognizer(edgePanGesture)
 
         
     }
