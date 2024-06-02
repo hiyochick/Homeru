@@ -16,6 +16,16 @@ class ViewController: UIViewController {
         
         start.layer.borderWidth = 1.0
         start.layer.borderColor = UIColor.brown.cgColor
+        
+        self.navigationController?.isNavigationBarHidden = true
+
+        // Backボタンの変更
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(
+            title: "",
+            style: .plain,
+            target: nil,
+            action: nil
+        )
     }
 
 

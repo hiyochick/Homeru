@@ -22,22 +22,13 @@ class ShareViewController: UIViewController {
         
         let combined = shareData.joined(separator: " ")
         hometaro.text = combined
+        hometaro.font = UIFont(name: "KiwiMaru-Regular", size: 25)
         
-        // スワイプジェスチャーの設定
-        //1
-        //        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
-        //        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
-        //        self.view.addGestureRecognizer(recognizer)
-        
-//        let target = self.navigationController?.value(forKey: "_cachedInteractionController")
-//        let recognizer = UIPanGestureRecognizer(target: target, action: Selector(("handleNavigationTransition:")))
-//        self.view.addGestureRecognizer(recognizer)
-        
-//        navigationController?.interactivePopGestureRecognizer?.delegate = nil
         // スクリーンエッジパンジェスチャーレコグナイザーの作成
-                let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action: #selector(handleEdgePan(_:)))
-                edgePanGesture.edges = .left // 左端からのスワイプを検出
-                view.addGestureRecognizer(edgePanGesture)
+        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action:
+        #selector(handleEdgePan(_:)))
+        edgePanGesture.edges = .left // 左端からのスワイプを検出
+        view.addGestureRecognizer(edgePanGesture)
 
         
     }
