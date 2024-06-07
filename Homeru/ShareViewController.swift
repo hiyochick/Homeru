@@ -26,9 +26,9 @@ class ShareViewController: UIViewController {
 //        // デバッグのためのログ出力
 //        print("shareData: \(shareData)")
         
-        let combined = shareData.joined(separator: " ")
+        let combined = shareData.joined(separator: "")
         hometaro.text = combined
-        hometaro.font = UIFont(name: "KiwiMaru-Regular", size: 30)
+        hometaro.font = UIFont(name: "craftmincho", size: 27)
         
 //        // スクリーンエッジパンジェスチャーレコグナイザーの作成
 //        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action:

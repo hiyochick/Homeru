@@ -16,8 +16,4 @@ class SecondViewController: UIViewController {
     }
     
 
-    @IBAction func share() {
-        
-    }
-
 }
