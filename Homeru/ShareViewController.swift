@@ -13,18 +13,22 @@ class ShareViewController: UIViewController {
     
     @IBOutlet var hometaro: UILabel!
     @IBOutlet var screenshotView: UIView!
-    @IBOutlet var returnButton: UIButton!
+    
+    
+    @IBAction func returnAction(_ sender: Any) {
+          dismiss(animated: true, completion: nil)
+      }
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // デバッグのためのログ出力
-        print("shareData: \(shareData)")
+//        // デバッグのためのログ出力
+//        print("shareData: \(shareData)")
         
         let combined = shareData.joined(separator: " ")
         hometaro.text = combined
-        hometaro.font = UIFont(name: "KiwiMaru-Regular", size: 25)
+        hometaro.font = UIFont(name: "KiwiMaru-Regular", size: 30)
         
 //        // スクリーンエッジパンジェスチャーレコグナイザーの作成
 //        let edgePanGesture = UIScreenEdgePanGestureRecognizer(target: self, action:
@@ -43,16 +47,22 @@ class ShareViewController: UIViewController {
         shareScreenshot()
     }
     // スクリーンショットを撮る関数
+//    func takeScreenshot() -> UIImage? {
+//        let scenes = UIApplication.shared.connectedScenes
+//        let windowScene = scenes.first as? UIWindowScene
+//        let window = windowScene?.windows.first
+//       // let window = UIApplication.shared.windows.first { $0.isKeyWindow }
+//        let renderer = UIGraphicsImageRenderer(bounds: window!.bounds)
+//        return renderer.image { rendererContext in
+//            window!.layer.render(in: rendererContext.cgContext)
+//        }
+//    }
     func takeScreenshot() -> UIImage? {
-        let scenes = UIApplication.shared.connectedScenes
-        let windowScene = scenes.first as? UIWindowScene
-        let window = windowScene?.windows.first
-       // let window = UIApplication.shared.windows.first { $0.isKeyWindow }
-        let renderer = UIGraphicsImageRenderer(bounds: window!.bounds)
-        return renderer.image { rendererContext in
-            window!.layer.render(in: rendererContext.cgContext)
-        }
-    }
+         let renderer = UIGraphicsImageRenderer(bounds: screenshotView.bounds)
+         return renderer.image { _ in
+             screenshotView.drawHierarchy(in: screenshotView.bounds, afterScreenUpdates: true)
+         }
+     }
 
     // スクリーンショットをシェアする関数
     func shareScreenshot() {
