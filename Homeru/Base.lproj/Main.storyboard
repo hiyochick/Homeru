@@ -34,7 +34,7 @@
                                     <fontDescription key="titleFontDescription" name="AvenirNext-Heavy" family="Avenir Next" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
-                                    <segue destination="Nig-zS-sAT" kind="presentation" modalPresentationStyle="fullScreen" id="R9f-80-IJZ"/>
+                                    <segue destination="Nig-zS-sAT" kind="presentation" identifier="start" modalPresentationStyle="fullScreen" id="R9f-80-IJZ"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="10" translatesAutoresizingMaskIntoConstraints="NO" id="vKe-Dl-d94">
@@ -867,7 +867,7 @@
                         <outlet property="tango5" destination="qk4-am-Ojc" id="W4b-lr-Nu7"/>
                         <outlet property="tango6" destination="aS1-xQ-CFL" id="Y1h-jo-EG7"/>
                         <outlet property="timerLabel" destination="9ud-Mk-bke" id="ZOi-Yv-ubT"/>
-                        <segue destination="Fqd-D9-o3M" kind="show" id="m3L-k1-DGR"/>
+                        <segue destination="Fqd-D9-o3M" kind="show" identifier="tonext" id="m3L-k1-DGR"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Dt-M0-v10" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

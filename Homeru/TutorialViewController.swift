@@ -22,14 +22,24 @@ class TutorialViewController: UIPageViewController {
         let sixthpage = storyboard!.instantiateViewController(withIdentifier: "SixthViewController") as! SixthViewController
         
         pageViewControllers = [secondpage, thirdpage, fourthpage, fifthpage, sixthpage]
+        
         dataSource = self
+        delegate = self
+        
         //最初に表示するページの指定
         self.setViewControllers([pageViewControllers[0]], direction: .forward, animated: true, completion: nil)
         
-        UIPageControl.appearance().backgroundColor = .clear
-
+        //UIPageControl.appearance().backgroundColor = .clear
+        configurePageControl()
         
     }
+    
+    func configurePageControl() {
+            let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [TutorialViewController.self])
+            appearance.backgroundColor = .clear // 背景色を透明に設定
+            //appearance.pageIndicatorTintColor = .lightGray // 非アクティブなページインジケータの色
+            //appearance.currentPageIndicatorTintColor = .black // アクティブなページインジケータの色
+        }
         
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,7 +47,6 @@ class TutorialViewController: UIPageViewController {
         
 }
     
-    //以下追加
 extension TutorialViewController: UIPageViewControllerDataSource, UIPageViewControllerDelegate {
     
     func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController? {
@@ -66,8 +75,15 @@ extension TutorialViewController: UIPageViewControllerDataSource, UIPageViewCont
         pageViewControllers.count
     }
     
+//    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
+//        0
+//    }
     func presentationIndex(for pageViewController: UIPageViewController) -> Int {
-        0
+        if let firstViewController = viewControllers?.first,
+           let firstViewControllerIndex = pageViewControllers.firstIndex(of: firstViewController) {
+            return firstViewControllerIndex
+        }
+        return 0
     }
 }
 
