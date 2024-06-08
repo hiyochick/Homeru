@@ -23,29 +23,9 @@
 		632E50B92BFC6F2100BAA929 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 632E50B82BFC6F2100BAA929 /* Assets.xcassets */; };
 		632E50BC2BFC6F2100BAA929 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 632E50BB2BFC6F2100BAA929 /* Base */; };
 		632E50C42BFE008000BAA929 /* DuolingoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632E50C32BFE007F00BAA929 /* DuolingoViewController.swift */; };
-		63EEC04C2C0C67060006A507 /* KiwiMaru-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC04A2C0C66DA0006A507 /* KiwiMaru-Light.ttf */; };
-		63EEC04D2C0C67090006A507 /* KiwiMaru-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC0492C0C66DA0006A507 /* KiwiMaru-Medium.ttf */; };
-		63EEC04E2C0C670D0006A507 /* KiwiMaru-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC04B2C0C66DA0006A507 /* KiwiMaru-Regular.ttf */; };
-		63EEC0562C0DBA680006A507 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EEC0552C0DBA680006A507 /* WidgetKit.framework */; };
-		63EEC0582C0DBA680006A507 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EEC0572C0DBA680006A507 /* SwiftUI.framework */; };
-		63EEC05B2C0DBA680006A507 /* kansaibenBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEC05A2C0DBA680006A507 /* kansaibenBundle.swift */; };
-		63EEC05D2C0DBA680006A507 /* kansaibenLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEC05C2C0DBA680006A507 /* kansaibenLiveActivity.swift */; };
-		63EEC05F2C0DBA680006A507 /* kansaiben.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEC05E2C0DBA680006A507 /* kansaiben.swift */; };
-		63EEC0612C0DBA680006A507 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63EEC0602C0DBA680006A507 /* AppIntent.swift */; };
-		63EEC0632C0DBA6B0006A507 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC0622C0DBA6B0006A507 /* Assets.xcassets */; };
-		63EEC0672C0DBA6B0006A507 /* kansaibenExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 63EEC0532C0DBA680006A507 /* kansaibenExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		635361F82C14059300579F18 /* CourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635361F72C14059300579F18 /* CourseViewController.swift */; };
 		63EEC0712C1002C50006A507 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 63EEC0702C1002C50006A507 /* icon.png */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		63EEC0652C0DBA6B0006A507 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 632E50A42BFC6F1F00BAA929 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63EEC0522C0DBA680006A507;
-			remoteInfo = kansaibenExtension;
-		};
-/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		63EEC06B2C0DBA6B0006A507 /* Embed Foundation Extensions */ = {
@@ -54,7 +34,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				63EEC0672C0DBA6B0006A507 /* kansaibenExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,18 +59,7 @@
 		632E50BB2BFC6F2100BAA929 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		632E50BD2BFC6F2100BAA929 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		632E50C32BFE007F00BAA929 /* DuolingoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DuolingoViewController.swift; sourceTree = "<group>"; };
-		63EEC0492C0C66DA0006A507 /* KiwiMaru-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Medium.ttf"; sourceTree = "<group>"; };
-		63EEC04A2C0C66DA0006A507 /* KiwiMaru-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Light.ttf"; sourceTree = "<group>"; };
-		63EEC04B2C0C66DA0006A507 /* KiwiMaru-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "KiwiMaru-Regular.ttf"; sourceTree = "<group>"; };
-		63EEC0532C0DBA680006A507 /* kansaibenExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = kansaibenExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		63EEC0552C0DBA680006A507 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
-		63EEC0572C0DBA680006A507 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		63EEC05A2C0DBA680006A507 /* kansaibenBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kansaibenBundle.swift; sourceTree = "<group>"; };
-		63EEC05C2C0DBA680006A507 /* kansaibenLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kansaibenLiveActivity.swift; sourceTree = "<group>"; };
-		63EEC05E2C0DBA680006A507 /* kansaiben.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = kansaiben.swift; sourceTree = "<group>"; };
-		63EEC0602C0DBA680006A507 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		63EEC0622C0DBA6B0006A507 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		63EEC0642C0DBA6B0006A507 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		635361F72C14059300579F18 /* CourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseViewController.swift; sourceTree = "<group>"; };
 		63EEC0702C1002C50006A507 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,15 +71,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63EEC0502C0DBA680006A507 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63EEC0582C0DBA680006A507 /* SwiftUI.framework in Frameworks */,
-				63EEC0562C0DBA680006A507 /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -119,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				632E50AE2BFC6F1F00BAA929 /* Homeru */,
-				63EEC0592C0DBA680006A507 /* kansaiben */,
-				63EEC0542C0DBA680006A507 /* Frameworks */,
 				632E50AD2BFC6F1F00BAA929 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -129,7 +86,6 @@
 			isa = PBXGroup;
 			children = (
 				632E50AC2BFC6F1F00BAA929 /* Homeru.app */,
-				63EEC0532C0DBA680006A507 /* kansaibenExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -137,9 +93,6 @@
 		632E50AE2BFC6F1F00BAA929 /* Homeru */ = {
 			isa = PBXGroup;
 			children = (
-				63EEC04A2C0C66DA0006A507 /* KiwiMaru-Light.ttf */,
-				63EEC0492C0C66DA0006A507 /* KiwiMaru-Medium.ttf */,
-				63EEC04B2C0C66DA0006A507 /* KiwiMaru-Regular.ttf */,
 				630C70102C12D4D900D5CD5C /* craftmincho.otf */,
 				632E50AF2BFC6F1F00BAA929 /* AppDelegate.swift */,
 				632E50B12BFC6F1F00BAA929 /* SceneDelegate.swift */,
@@ -158,30 +111,9 @@
 				63234C832C07210A009507C0 /* FifthViewController.swift */,
 				63234C852C0721CD009507C0 /* SixthViewController.swift */,
 				63133E132C08523C00BF929A /* ShareViewController.swift */,
+				635361F72C14059300579F18 /* CourseViewController.swift */,
 			);
 			path = Homeru;
-			sourceTree = "<group>";
-		};
-		63EEC0542C0DBA680006A507 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				63EEC0552C0DBA680006A507 /* WidgetKit.framework */,
-				63EEC0572C0DBA680006A507 /* SwiftUI.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		63EEC0592C0DBA680006A507 /* kansaiben */ = {
-			isa = PBXGroup;
-			children = (
-				63EEC05A2C0DBA680006A507 /* kansaibenBundle.swift */,
-				63EEC05C2C0DBA680006A507 /* kansaibenLiveActivity.swift */,
-				63EEC05E2C0DBA680006A507 /* kansaiben.swift */,
-				63EEC0602C0DBA680006A507 /* AppIntent.swift */,
-				63EEC0622C0DBA6B0006A507 /* Assets.xcassets */,
-				63EEC0642C0DBA6B0006A507 /* Info.plist */,
-			);
-			path = kansaiben;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,29 +131,11 @@
 			buildRules = (
 			);
 			dependencies = (
-				63EEC0662C0DBA6B0006A507 /* PBXTargetDependency */,
 			);
 			name = Homeru;
 			productName = Homeru;
 			productReference = 632E50AC2BFC6F1F00BAA929 /* Homeru.app */;
 			productType = "com.apple.product-type.application";
-		};
-		63EEC0522C0DBA680006A507 /* kansaibenExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63EEC0682C0DBA6B0006A507 /* Build configuration list for PBXNativeTarget "kansaibenExtension" */;
-			buildPhases = (
-				63EEC04F2C0DBA680006A507 /* Sources */,
-				63EEC0502C0DBA680006A507 /* Frameworks */,
-				63EEC0512C0DBA680006A507 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = kansaibenExtension;
-			productName = kansaibenExtension;
-			productReference = 63EEC0532C0DBA680006A507 /* kansaibenExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -234,9 +148,6 @@
 				LastUpgradeCheck = 1540;
 				TargetAttributes = {
 					632E50AB2BFC6F1F00BAA929 = {
-						CreatedOnToolsVersion = 15.4;
-					};
-					63EEC0522C0DBA680006A507 = {
 						CreatedOnToolsVersion = 15.4;
 					};
 				};
@@ -255,7 +166,6 @@
 			projectRoot = "";
 			targets = (
 				632E50AB2BFC6F1F00BAA929 /* Homeru */,
-				63EEC0522C0DBA680006A507 /* kansaibenExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -266,21 +176,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				630C70112C12D50800D5CD5C /* craftmincho.otf in Resources */,
-				63EEC04E2C0C670D0006A507 /* KiwiMaru-Regular.ttf in Resources */,
 				63EEC0712C1002C50006A507 /* icon.png in Resources */,
-				63EEC04D2C0C67090006A507 /* KiwiMaru-Medium.ttf in Resources */,
-				63EEC04C2C0C67060006A507 /* KiwiMaru-Light.ttf in Resources */,
 				632E50B92BFC6F2100BAA929 /* Assets.xcassets in Resources */,
 				632E50BC2BFC6F2100BAA929 /* Base in Resources */,
 				632E50B72BFC6F1F00BAA929 /* Base in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63EEC0512C0DBA680006A507 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63EEC0632C0DBA6B0006A507 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				635361F82C14059300579F18 /* CourseViewController.swift in Sources */,
 				63234C842C07210A009507C0 /* FifthViewController.swift in Sources */,
 				63234C802C0720EB009507C0 /* SecondViewController.swift in Sources */,
 				63234C782C02F7AB009507C0 /* HometaroViewController.swift in Sources */,
@@ -306,26 +206,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		63EEC04F2C0DBA680006A507 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				63EEC05F2C0DBA680006A507 /* kansaiben.swift in Sources */,
-				63EEC0612C0DBA680006A507 /* AppIntent.swift in Sources */,
-				63EEC05B2C0DBA680006A507 /* kansaibenBundle.swift in Sources */,
-				63EEC05D2C0DBA680006A507 /* kansaibenLiveActivity.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		63EEC0662C0DBA6B0006A507 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 63EEC0522C0DBA680006A507 /* kansaibenExtension */;
-			targetProxy = 63EEC0652C0DBA6B0006A507 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		632E50B52BFC6F1F00BAA929 /* Main.storyboard */ = {
@@ -469,7 +350,6 @@
 		632E50C12BFC6F2100BAA929 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -497,7 +377,6 @@
 		632E50C22BFC6F2100BAA929 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,58 +401,6 @@
 			};
 			name = Release;
 		};
-		63EEC0692C0DBA6B0006A507 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = kansaiben/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = kansaiben;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.nagase.hiyochick.Homeru.kansaiben;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		63EEC06A2C0DBA6B0006A507 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = kansaiben/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = kansaiben;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = app.nagase.hiyochick.Homeru.kansaiben;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -591,15 +418,6 @@
 			buildConfigurations = (
 				632E50C12BFC6F2100BAA929 /* Debug */,
 				632E50C22BFC6F2100BAA929 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63EEC0682C0DBA6B0006A507 /* Build configuration list for PBXNativeTarget "kansaibenExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63EEC0692C0DBA6B0006A507 /* Debug */,
-				63EEC06A2C0DBA6B0006A507 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

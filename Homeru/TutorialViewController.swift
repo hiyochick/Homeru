@@ -29,16 +29,23 @@ class TutorialViewController: UIPageViewController {
         //最初に表示するページの指定
         self.setViewControllers([pageViewControllers[0]], direction: .forward, animated: true, completion: nil)
         
-        //UIPageControl.appearance().backgroundColor = .clear
         configurePageControl()
         
     }
     
     func configurePageControl() {
-            let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [TutorialViewController.self])
-            appearance.backgroundColor = .clear // 背景色を透明に設定
-            //appearance.pageIndicatorTintColor = .lightGray // 非アクティブなページインジケータの色
-            //appearance.currentPageIndicatorTintColor = .black // アクティブなページインジケータの色
+        //TutorialViewController自体の背景色を白に
+        view.backgroundColor = .white
+        
+        let appearance = UIPageControl.appearance(whenContainedInInstancesOf: [TutorialViewController.self])
+        //非アクティブなページ
+        appearance.pageIndicatorTintColor = .lightGray
+        //アクティブなページ
+        appearance.currentPageIndicatorTintColor = .black
+        
+        UIPageControl.appearance().backgroundColor = .clear
+
+        
         }
         
     override func didReceiveMemoryWarning() {
